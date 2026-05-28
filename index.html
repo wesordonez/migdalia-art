@@ -1,51 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Migdalia Art" />
-    <title>Migdalia Art</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="site-logo" href="./">Migdalia Art</a>
-      <nav class="site-nav" aria-label="Main">
-        <a href="#work">Work</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Migdalia — Mixed Media Artist</title>
+  <meta name="description" content="Mixed media portraits and political cartoons by Migdalia. Chicago / Puerto Rico." />
+
+  <!-- Editorial serif + small mono for labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--
+    Tweak defaults. Live-editable in the Tweaks panel; the JSON between
+    the EDITMODE markers is parsed and rewritten when values change.
+    To strip the tweak system before deploying, delete this <script> and
+    the <script src="tweaks.js"> at the bottom of <body>.
+  -->
+  <script>
+    window.TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "bgColor": "#ECE6EA",
+      "accentColor": "#C99FCD",
+      "inkColor": "#3D402F",
+      "frameWidth": 20
+    }/*EDITMODE-END*/;
+  </script>
+</head>
+<body>
+
+  <!-- ───────────────────────────── NAV ───────────────────────────── -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="Migdalia — home">
+      <img src="assets/logo.svg" alt="" class="nav__logo" />
+      <span>m. mixedmedia</span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ───────────────────────────── HERO ───────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+
+      <div class="hero__left">
+        <img src="assets/logo.svg" alt="Migdalia logo" class="hero__logo" />
+        <p class="eyebrow">Mixed media artist · est. Chicago</p>
+        <h1 class="hero__name">
+          <span>Migdalia</span>
+          <span class="hero__name-last">Mixed&nbsp;Media</span>
+        </h1>
+        <p class="hero__tagline">
+          Portraits &amp; political cartoons.<br/>
+          Boricua hands, Chicago eyes.
+        </p>
+      </div>
+
+      <aside class="hero__contact">
+        <p class="eyebrow">Get in touch</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__label">Email</span>
+            <a href="mailto:hello@m-mixedmedia.art">hello@m-mixedmedia.art</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Phone</span>
+            <a href="tel:+13125550123">(312) 555-0123</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Instagram</span>
+            <a href="https://instagram.com/m.mixedmedia" target="_blank" rel="noopener">@m.mixedmedia</a>
+          </li>
+        </ul>
+        <a href="#contact" class="hero__cta">Commission a piece →</a>
+      </aside>
+
+    </div>
+
+    <p class="hero__scroll" aria-hidden="true">scroll ↓</p>
+  </section>
+
+
+  <!-- ───────────────────────────── GALLERY ───────────────────────────── -->
+  <section class="section section--gallery" id="gallery">
+    <header class="section__head">
+      <p class="eyebrow">01 — Selected work</p>
+      <h2 class="section__title">Gallery</h2>
+      <p class="section__lede">
+        A rotating selection of recent portraits, studies and editorial cartoons.
+        Click any image to enlarge.
+      </p>
+    </header>
+
+    <!--
+      Asymmetric editorial grid. Each <figure> is a "framed" piece with a thick lilac mat.
+      Captions sit beneath, title + medium / year / short note.
+      Add, remove, or reorder figures freely — the grid will reflow.
+    -->
+    <div class="gallery">
+
+      <figure class="art art--tall art--span-7">
+        <div class="art__frame"><img src="assets/art-1.svg" alt="Tía Carmen, portrait study" /></div>
+        <figcaption>
+          <h3>Tía Carmen</h3>
+          <p class="art__meta">Acrylic on canvas · 24×30in · 2024</p>
+          <p>A portrait of my aunt at her kitchen table in Humboldt Park. The flowers behind her are from her own garden.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--wide art--span-5">
+        <div class="art__frame"><img src="assets/art-2.svg" alt="Diptych study in lilac" /></div>
+        <figcaption>
+          <h3>Diptych, in two cities</h3>
+          <p class="art__meta">Mixed media on paper · 2023</p>
+          <p>A meditation on holding two homes at once — San Juan and Logan Square.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--tall art--span-4">
+        <div class="art__frame"><img src="assets/art-3.svg" alt="Self portrait, mourning" /></div>
+        <figcaption>
+          <h3>Self, mourning</h3>
+          <p class="art__meta">Charcoal &amp; pastel · 2024</p>
+          <p>From a series on grief and the public face we wear through it.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--wide art--span-8">
+        <div class="art__frame"><img src="assets/art-4.svg" alt="A quiet hearing, editorial cartoon" /></div>
+        <figcaption>
+          <h3>A quiet hearing</h3>
+          <p class="art__meta">Pen &amp; ink · editorial · 2024</p>
+          <p>Commissioned for a community newsletter covering housing policy on the Northwest side.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--square art--span-5">
+        <div class="art__frame"><img src="assets/art-5.svg" alt="Star, after the flag" /></div>
+        <figcaption>
+          <h3>Star, after the flag</h3>
+          <p class="art__meta">Gouache on board · 2023</p>
+          <p>The Chicago star refracted through la bandera. A nod to both homes.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--tall art--span-3">
+        <div class="art__frame"><img src="assets/art-6.svg" alt="Mami, recordando" /></div>
+        <figcaption>
+          <h3>Mami, recordando</h3>
+          <p class="art__meta">Oil on linen · 2025</p>
+          <p>My mother in the moment just before she remembers something.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="art art--wide art--span-4">
+        <div class="art__frame"><img src="assets/art-7.svg" alt="Three rooftops" /></div>
+        <figcaption>
+          <h3>Three rooftops</h3>
+          <p class="art__meta">Watercolor &amp; ink · 2024</p>
+          <p>Studies from a summer spent on a Pilsen rooftop, watching the city wake up.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────── ABOUT ───────────────────────────── -->
+  <section class="section section--about" id="about">
+    <header class="section__head">
+      <p class="eyebrow">02 — About</p>
+      <h2 class="section__title">About Migdalia</h2>
+    </header>
+
+    <div class="about">
+      <div class="about__portrait">
+        <div class="art__frame art__frame--portrait">
+          <img src="assets/portrait.svg" alt="Portrait of Migdalia" />
+        </div>
+      </div>
+      <div class="about__copy">
+        <p class="about__pull">
+          <em>"I paint the people who raised me, and the city that taught me how to look back at it."</em>
+        </p>
+        <p>
+          [Placeholder bio.] Migdalia is a Puerto Rican mixed-media artist who grew up between
+          Humboldt Park and her grandmother's house in Ponce. Her work moves between intimate
+          portraiture — friends, family, neighbors — and editorial cartoons drawn for
+          community newsletters across Chicago's West and Northwest sides.
+        </p>
+        <p>
+          [Placeholder bio.] She works primarily in acrylic, charcoal and pen &amp; ink, often
+          on found paper or hand-stretched linen. Her practice is rooted in slow looking and in
+          listening to the rooms her subjects choose to sit in.
+        </p>
+        <p>
+          [Placeholder bio.] She has shown at neighborhood galleries, community centers and
+          a handful of dive bars across the city. She is available for commissioned portraits,
+          editorial illustration, and select community projects.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Chicago, IL</dd></div>
+          <div><dt>From</dt><dd>Ponce, Puerto Rico</dd></div>
+          <div><dt>Mediums</dt><dd>Acrylic, charcoal, pen &amp; ink, mixed</dd></div>
+          <div><dt>Available for</dt><dd>Commissions · editorial · community work</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────── CONTACT ───────────────────────────── -->
+  <section class="section section--contact" id="contact">
+    <header class="section__head">
+      <p class="eyebrow">03 — Contact</p>
+      <h2 class="section__title">Let's talk</h2>
+      <p class="section__lede">
+        Commission a portrait, request a cartoon, or just say hello. I read every note.
+      </p>
+    </header>
+
+    <div class="contact">
+
+      <aside class="contact__info">
+        <p class="eyebrow">Direct</p>
+        <ul class="contact-list contact-list--stacked">
+          <li>
+            <span class="contact-list__label">Email</span>
+            <a href="mailto:hello@m-mixedmedia.art">hello@m-mixedmedia.art</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Phone</span>
+            <a href="tel:+13125550123">(312) 555-0123</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Instagram</span>
+            <a href="https://instagram.com/m.mixedmedia" target="_blank" rel="noopener">@m.mixedmedia</a>
+          </li>
+          <li>
+            <span class="contact-list__label">Studio</span>
+            <span>Chicago, IL · by appointment</span>
+          </li>
+        </ul>
+        <p class="contact__note">
+          Typical reply within 2&ndash;3 days. Commission requests open year-round; please
+          include a rough timeline and budget.
+        </p>
+      </aside>
+
+      <!--
+        ─────────────────────────────────────────────────────────────────
+        FORM.APP INTEGRATION
+        ─────────────────────────────────────────────────────────────────
+        This form is wired for form.app. Two ways to connect it:
+
+        OPTION A — Direct POST (current setup):
+          1. In form.app, create your form and copy its endpoint URL
+             (something like  https://form.app/api/v1/forms/XXXXX/submit ).
+          2. Paste it into the `action` attribute below.
+          3. Done — submissions email Migdalia at the address configured in form.app.
+
+        OPTION B — form.app embed code:
+          Replace the entire <form> below with the embed snippet they give you
+          (it'll be an <iframe> or <script> tag). The styles still apply to the
+          wrapper.
+        ─────────────────────────────────────────────────────────────────
+      -->
+      <form class="contact__form"
+            id="contactForm"
+            action="https://form.app/api/v1/forms/REPLACE_WITH_YOUR_FORM_ID/submit"
+            method="POST">
+        <div class="field">
+          <label for="cf-name">Your name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <select id="cf-subject" name="subject">
+            <option>Commission inquiry</option>
+            <option>Editorial / publication work</option>
+            <option>Community project</option>
+            <option>Press</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="6" required placeholder="Tell me a little about what you have in mind."></textarea>
+        </div>
+
+        <button type="submit" class="btn-send">
+          <span>Send message</span>
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ───────────────────────────── FOOTER ───────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="" />
+        <p>
+          <strong>m. mixedmedia</strong><br/>
+          Mixed media artist · Chicago / Puerto Rico
+        </p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#top">Top</a>
+        <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
 
-    <main>
-      <section class="hero" id="home">
-        <h1>Migdalia Art</h1>
-        <p class="hero-lead">
-          Welcome. Replace this section with your hero content, featured work, or
-          studio introduction.
-        </p>
-      </section>
+      <div class="footer__legal">
+        <p>© <span id="year">2026</span> Migdalia. All artwork reproduced with permission of the artist.</p>
+        <p class="footer__site">m-mixedmedia.art</p>
+      </div>
+    </div>
+  </footer>
 
-      <section class="section" id="work">
-        <h2>Work</h2>
-        <p>Add your portfolio grid or gallery here.</p>
-      </section>
 
-      <section class="section" id="about">
-        <h2>About</h2>
-        <p>Add your artist bio here.</p>
-      </section>
+  <!-- ───────────────────────────── LIGHTBOX ───────────────────────────── -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">←</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">→</button>
+    <figure class="lightbox__figure">
+      <div class="art__frame art__frame--lightbox">
+        <img id="lightboxImg" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%2F%3E" alt="" />
+      </div>
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
 
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Add your email, social links, or contact form here.</p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Migdalia Art</p>
-    </footer>
-
-    <script src="js/main.js"></script>
-  </body>
+  <script src="script.js" defer></script>
+  <script src="tweaks.js" defer></script>
+</body>
 </html>

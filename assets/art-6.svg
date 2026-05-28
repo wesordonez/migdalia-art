@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="1000" fill="#FCF9D8"></rect>
+  <g>
+    <rect x="0" y="0" width="800" height="240" fill="#C99FCD"></rect>
+    <path d="M400 280 Q540 360 520 540 Q500 700 400 760 Q300 700 280 540 Q260 360 400 280 Z" fill="#3D402F"></path>
+    <path d="M340 460 Q400 440 460 460" stroke="#C99FCD" stroke-width="5" fill="none" stroke-linecap="round"></path>
+    <circle cx="360" cy="500" r="7" fill="#FCF9D8"></circle>
+    <circle cx="440" cy="500" r="7" fill="#FCF9D8"></circle>
+    <path d="M380 580 Q400 600 420 580" stroke="#FCF9D8" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    <rect x="0" y="820" width="800" height="180" fill="#3D402F"></rect>
+    <text x="400" y="920" text-anchor="middle" font-family="&#39;Cormorant Garamond&#39;, serif" font-style="italic" font-size="42" fill="#FCF9D8">mami, recordando</text>
+  </g>
+</svg>

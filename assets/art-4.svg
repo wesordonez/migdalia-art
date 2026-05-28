@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <rect width="1000" height="700" fill="#FCF9D8"></rect>
+  
+  <g>
+    <path d="M0 500 Q250 460 500 500 T1000 500 L1000 700 L0 700 Z" fill="#3D402F"></path>
+    <circle cx="200" cy="320" r="110" fill="#C99FCD"></circle>
+    <circle cx="180" cy="300" r="8" fill="#3D402F"></circle>
+    <circle cx="240" cy="300" r="8" fill="#3D402F"></circle>
+    <path d="M170 360 Q200 380 230 360" stroke="#3D402F" stroke-width="4" fill="none" stroke-linecap="round"></path>
+    <rect x="450" y="200" width="380" height="220" fill="none" stroke="#3D402F" stroke-width="3"></rect>
+    <text x="470" y="260" font-family="&#39;Cormorant Garamond&#39;, serif" font-style="italic" font-size="36" fill="#3D402F">&#34;a quiet hearing&#34;</text>
+    <text x="470" y="310" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="14" fill="#3D402F" opacity="0.7">PEN &amp; INK · 2024</text>
+    <line x1="470" y1="340" x2="800" y2="340" stroke="#C99FCD" stroke-width="6"></line>
+    <line x1="470" y1="360" x2="700" y2="360" stroke="#C99FCD" stroke-width="3"></line>
+  </g>
+</svg>

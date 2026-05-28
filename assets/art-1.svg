@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="1000" fill="#F4E6F2"></rect>
+  <g opacity="0.9">
+    <ellipse cx="400" cy="440" rx="180" ry="220" fill="#C99FCD"></ellipse>
+    <ellipse cx="400" cy="430" rx="160" ry="200" fill="#B886C2"></ellipse>
+    <path d="M250 700 Q400 620 550 700 L580 1000 L220 1000 Z" fill="#3D402F"></path>
+    <circle cx="350" cy="420" r="10" fill="#3D402F"></circle>
+    <circle cx="450" cy="420" r="10" fill="#3D402F"></circle>
+    <path d="M370 510 Q400 540 430 510" stroke="#3D402F" stroke-width="6" fill="none" stroke-linecap="round"></path>
+    <path d="M320 360 Q400 300 480 360" stroke="#3D402F" stroke-width="4" fill="none"></path>
+  </g>
+  <text x="40" y="970" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="18" fill="#3D402F" opacity="0.5">placeholder · art-1</text>
+</svg>

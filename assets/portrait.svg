@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  
+  <rect width="600" height="800" fill="#EFD9EC"></rect>
+  <g>
+    <circle cx="300" cy="310" r="150" fill="#C99FCD"></circle>
+    <path d="M120 800 Q300 520 480 800 Z" fill="#3D402F"></path>
+    <circle cx="300" cy="310" r="130" fill="#B886C2"></circle>
+    <path d="M230 280 Q300 240 370 280" stroke="#3D402F" stroke-width="3" fill="none"></path>
+    <circle cx="260" cy="320" r="7" fill="#3D402F"></circle>
+    <circle cx="340" cy="320" r="7" fill="#3D402F"></circle>
+    <path d="M270 390 Q300 410 330 390" stroke="#3D402F" stroke-width="4" fill="none" stroke-linecap="round"></path>
+  </g>
+  <text x="40" y="770" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="16" fill="#3D402F" opacity="0.5">placeholder · replace with portrait.jpg</text>
+</svg>

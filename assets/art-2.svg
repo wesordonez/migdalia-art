@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="600" fill="#FCF9D8"></rect>
+  <g>
+    <rect x="60" y="80" width="280" height="380" fill="#C99FCD"></rect>
+    <rect x="380" y="160" width="360" height="300" fill="#3D402F"></rect>
+    <circle cx="200" cy="270" r="80" fill="#FCF9D8"></circle>
+    <circle cx="560" cy="310" r="60" fill="#C99FCD"></circle>
+    <line x1="60" y1="500" x2="740" y2="500" stroke="#3D402F" stroke-width="3"></line>
+    <text x="60" y="540" font-family="&#39;Cormorant Garamond&#39;, serif" font-style="italic" font-size="32" fill="#3D402F">— diptych study</text>
+  </g>
+</svg>
