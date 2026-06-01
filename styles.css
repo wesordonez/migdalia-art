@@ -18,6 +18,10 @@
   /* Type */
   --font-serif: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   --font-mono:  'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --font-sans:  'Futura', 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Deep gray for section headings (per client) */
+  --deep-gray:  #2E2E33;
 
   /* Layout */
   --gutter: clamp(20px, 4vw, 64px);
@@ -88,8 +92,8 @@ a:hover { color: var(--lilac-deep); }
   color: var(--olive);
 }
 .nav__logo {
-  width: 36px;
-  height: 36px;
+  height: 44px;
+  width: auto;
   display: block;
 }
 .nav__links {
@@ -159,23 +163,13 @@ a:hover { color: var(--lilac-deep); }
   margin-bottom: 28px;
 }
 .hero__name {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  font-size: clamp(64px, 13vw, 180px);
-  line-height: 0.92;
-  letter-spacing: -0.02em;
   margin: 0 0 28px;
-  color: var(--olive);
-  text-wrap: balance;
+  line-height: 0;
 }
-.hero__name span { display: block; }
-.hero__name-last {
-  font-style: italic;
-  font-weight: 400;
-  color: var(--lilac-deep);
-  font-size: 0.42em;
-  letter-spacing: 0.02em;
-  margin-top: 8px;
+.hero__wordmark {
+  display: block;
+  width: clamp(260px, 38vw, 520px);
+  height: auto;
 }
 .hero__tagline {
   font-size: clamp(18px, 1.4vw, 22px);
@@ -271,11 +265,13 @@ a:hover { color: var(--lilac-deep); }
   margin-bottom: clamp(40px, 6vh, 72px);
 }
 .section__title {
-  font-family: var(--font-serif);
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-weight: 700;
   font-size: clamp(48px, 7vw, 96px);
   line-height: 1;
   letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: var(--deep-gray);
   margin: 0 0 1rem;
   font-style: italic;
 }
@@ -537,7 +533,7 @@ a:hover { color: var(--lilac-deep); }
   align-items: start;
 }
 .footer__brand { display: flex; gap: 16px; align-items: flex-start; }
-.footer__brand img { width: 48px; height: 48px; filter: invert(1) sepia(0.2) hue-rotate(220deg) brightness(1.1); }
+.footer__brand img { width: auto; height: 64px; filter: invert(1) brightness(1.05); }
 .footer__brand p { margin: 0; font-size: 15px; line-height: 1.5; color: color-mix(in srgb, var(--pearl) 88%, transparent); }
 .footer__brand strong { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--pearl); }
 
