@@ -94,7 +94,7 @@ a:hover { color: var(--lilac-deep); }
   color: var(--olive);
 }
 .nav__logo {
-  height: 44px;
+  height: 54px;
   width: auto;
   display: block;
 }
@@ -165,13 +165,13 @@ a:hover { color: var(--lilac-deep); }
   margin-bottom: 28px;
 }
 .hero__name {
-  margin: 0 0 28px;
+  margin: 0 0 24px;
   line-height: 0;
 }
-.hero__wordmark {
+.hero__mark {
   display: block;
-  width: clamp(260px, 38vw, 520px);
-  height: auto;
+  width: auto;
+  height: clamp(180px, 24vw, 280px);
 }
 .hero__tagline {
   font-size: clamp(18px, 1.4vw, 22px);
@@ -180,6 +180,20 @@ a:hover { color: var(--lilac-deep); }
   margin: 0;
   max-width: 36ch;
   line-height: 1.45;
+}
+.hero__mission {
+  margin-top: 28px;
+  padding-top: 22px;
+  max-width: 44ch;
+  border-top: 1px solid color-mix(in srgb, var(--olive) 18%, transparent);
+}
+.hero__mission .eyebrow { margin-bottom: 0.7rem; }
+.hero__mission-text {
+  margin: 0;
+  font-style: italic;
+  font-size: clamp(16px, 1.05vw, 19px);
+  line-height: 1.5;
+  color: var(--olive-soft);
 }
 
 .hero__contact {
